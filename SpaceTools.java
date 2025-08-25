@@ -21,9 +21,9 @@ public class SpaceTools {
 	}
 	
 	public static double orbitTime(Planet p, double speed) {
-		return getOrbitDistance(p) / speed;
+		return getOrbitDistance(p) * 1_000_000 / speed;
 	}
 	public static double orbitTime(Planet p) {
-		return getOrbitDistance(p) / 100000;
+		return getOrbitDistance(p) * 1_000_000 / 100_000;
 	}
 }
